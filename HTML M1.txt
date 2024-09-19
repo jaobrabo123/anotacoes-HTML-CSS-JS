@@ -1,0 +1,98 @@
+Anotações de HTML
+
+<h1></h1>	//Título de nível 1 (letra grande)
+
+emojis: emojipedia.org
+símbolos: https://www.w3schools.com/charsets/ref_utf_symbols.asp
+sites com imagens sem direitos autorais: Pexels, Unsplash, FreePik, RawPixel, Pixabay, Libreshot, Wikimedia Commons
+editar imagens: Gimp
+Favicon: Icon Archive
+criar um favicon: https://www.favicon.cc
+converter imagem para favicon: https://favicon.io
+
+colocar favicon: <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+atalho: digita link e seleciona a opção favicon
+
+<p></p>		//Parágrafo
+<p>Você pode escrever um parágrafo de
+	qualquer jeito
+	basta
+
+	colocar tudo
+	no meio
+	no par de tags p e /p
+</p>
+
+colocar < sem ser um comando: &lt;
+colocar > sem ser um comando: &gt;
+
+<hr>		//Linha horizontal
+<br>		//quebra de linha
+<img src="nome do arquivo" alt="nome opicional da imagem">
+<address>Colocar endereço</address>
+<strong>Negrito</strong>
+<em>Itálico</em>
+<mark>Marcar igual um marca-texto</mark>
+<small>Letra pequena</small>
+<del>texto como excluído (fica riscado)</del>
+<ins>texto como inserido (fica sublinhado)</ins>
+<sup>texto superior, exemplo: número com potência</sup>
+<sub>texto inferior, exemplo: fórmula química (H2O)</sub>
+<code>Destacar um comando, ex: document.getElementById('Teste')</code>
+<pre>Mostra o texto exetamente como foi digitado (contando espaços e quebras de linha)</pre>
+<q>Usado para mostrar uma citação (adiciona aspas, mas tem significado)</q>
+<blockquote cite="Link.de.onde.pegou.a.citação(não obrigatório)">Citação mais longa e formatada</blockquote>
+<abbr title="Você">Mostrar o que está abreviado (hover), ex: "vc"</abbr>
+<bdo dir="rtl">Inverter texto (inultil kk)</bdo>
+<ol type='Tipo de lista' start='Em qual número começa'>
+      <li>Lista enumerada
+      <li>Exemplo
+      <li>Teste
+</ol>
+Dá pra misturar as listas (botar uma dentro de outra)
+<ul type="Tipo da bolinha">
+      <li>Lista não enumerada
+      <li>Tipos: square, circle ou disc(padrão)
+      <li>Teste
+</ul>
+ul sem marcador (css):
+
+ul {
+   list-style: none;  --tirar marcador
+   padding: 0;  --tirar o espaçamento
+   margin: 0;  --tirar o espaçamento
+}
+<dl>
+      <dt>Objeto</dt>
+      <dd>Descrição</dd>
+</dl>
+
+<a href="link.com" target="_blank" rel="external">texto (target e rel se for link externo e quiser abrir numa guia ao lado)</a>
+rel="next": proxima página;rel="prev": página anterior; rel="nofollow": link sem patrocínio?? (pesquisar para saber mais)
+href="../endereço.end" ../ serve para voltar uma pasta
+media types (type="tipo"): https://www.iana.org/assignments/media-types/media-types.xhtml
+download ou download="nome que quiser do arquivo" --forçar download
+
+title="nome quando passa o mouse em cima"
+
+--Imagens em diferentes tamanhos dependendo to tamanho da tela; ordenar do menor para o maior e lembrar de botar o type
+<picture>
+        <source media="(max-width: {px da img + 50}px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: {px da img + 50}px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+
+--Colocar áudio no site
+<audio preload="metadata" autoplay(iniciar automaticamente;nao recomendo) controls(menuzinho para dar play) loop(quando acaba começa dnv)>
+        <source src="midia/musica.mp3" type="audio/mpeg"> --opção 1
+        <source src="midia/musica.ogg" type="audio/ogg">  --opção 2
+        <source src="midia/musica.wav" type="audio/wav">  --opção 3
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/musica.mp3" download="music.mp3" type="audio/mpeg">
+        clique aqui para baixar</a></p> --caso não suporte nenhum dos outros
+</audio>
+ou só:
+<audio src="midia/musica.mp3" controls></audio>
+musica de graça: biblioteca do youtube
+
+video de graça: pexels
+handbrake: mudar formato de video e mudar resolução

@@ -1,0 +1,90 @@
+Anotações do cursinho de JS
+
+window.alert() ou simplismente alert() serve para aparecer uma mensagem no site
+window.confirm() ou confirm() serve para aparecer uma confirmação de Ok ou Cancelar
+window.prompt() ou prompt() serve para aparecer um input
+
+Comentario em JS //Comentario na linha ou /*Comentario limitado pelo fim*/
+Comentario em CSS Apenas /* */
+Comentarioem HTML <!--Texto-->
+shift + alt + a para comentar
+
++ pode servir para concatenação ou soma
+
+normalmente o prompt é string, ent usa o Number.parseInt() para virar inteiro e Number.parseFloat() para numero decimal
+apenas Number para o js decidir o que vai ser
+
+String(n) mesmo uso de Number só que para texto
+n.toString() transformar em string no parênteses
+
+n.length    para quantos caracteres tem a string
+n.toUpperCase()   tudo maiúsculo
+n.toLowerCase()   tudo minúsculo
+
+document.write() escrever diretamente no HTML
+
+n.toFixed(numero)  fixar numero de casas decimais
+n.replace('.', ',') transforma . em ,
+
+exemplo de uso:
+
+var n1 = 1545.5
+n1.toFixed(2)
+'1545.50'
+n1.toFixed(2).replace('.', ',')
+'1545,50'
+
+n.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})
+'R$ 1.545,50'
+n.toLocaleString('pt-BR', {style:'currency', currency:'USD'})
+'US$ 1.545,50'
+n.toLocaleString('pt-BR', {style:'currency', currency:'EUR'})
+'€ 1.545,50'
+
+Operadores
+soma: 5 + 2 = 10
+subtração: 5 - 2 = 3
+multiplicação: 5 * 2 = 10
+divisão: 5 / 2 = 2.5
+resto da divisão inteira: 5 % 2 = 1
+potenciação: 5 ** 2 = 25
+
+n++   valor +1
+n--   valor -1
+
+typeof n    //saber o tipo da variavel
+
+!   //negação
+&&  //conjunção (e)
+||  // disjunção (ou)
+ORDEM CASO OS 3 ESTEJAM NA MESMA LINHA: ! - && - ||
+
+n ? true:false
+exemplo:
+var media = 5.5
+media>=7.0 ? "Aprovado":"Reprovado"
+"Reprovado"
+
+getElementsByTagName()	//por marca
+Exemplo:
+var p1 = document.getElementsByTagName('p')[0]  //variavel p1 recebe o que tem no primeiro paragrafo (0)
+document.write(p1.innerText)	//escreve o que tem no primerio paragrafo
+p1.style.color = 'blue'		//troca a  cor do texto no p1
+p1.innerText	// pega apenas o texto
+p1.innerHTML	// pega o texto e os outros comandos ex: <strong>
+
+var corpo = document.body
+corpo.style.backgroundColor = 'red'	//troca a cor do fundo do body
+
+getElementsByName()	//pega pelo name; usar [] caso tenha outro com o mesmo name e queira um específico
+getElementById()	//pega pelo id
+getElementsByClassName()	//pega pela class; usar [] caso queria um específico
+
+var d = document.getElementById('msg')
+d.innerText = 'Estou aguardando'	//altera o conteudo do selecionado
+document.getElementById('msg').innerText = 'Estou aguardando...'	//altera de uma vez sem precisar de uma variavel
+
+document.querySelector()	//estrutura dos parênteses: tipo(ex:div) - # se for id . se for class - nome da class ou id
+ex:
+var c = document.querySelector('div#msg')
+c.style.color = 'blue'
