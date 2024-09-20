@@ -1,0 +1,2 @@
+bootstrap: estilos prontos com class
+datatables: personalizar tabela pra pesquisar e passar de página
