@@ -1,2 +1,3 @@
 bootstrap: estilos prontos com class
 datatables: personalizar tabela pra pesquisar e passar de página
+alterar tipo de arquivo (ex: png para ico): convertio
